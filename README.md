@@ -63,7 +63,9 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 |  *7*  | As a user, I want to know what kind of amenities and features the parks have, like hiking trails, visitor centers, hours of visitor center operations, etc.  |
 |  *8*  | As a user, I want to get alerts about the national park I'm researching in case there are closure of roads due to weather, natural disasters, covid restrictions, etc.  |
 
-![SQL Design Plan](TODO.png "One-to-many Relationship Schema for Reviews & Destinations")
+## SQL Schema Design
+
+![SQL Design Plan](SQL_Schema.png "One-to-many Relationship Schema for Reviews & Destinations")
 
 ## 🐛 Known bugs
 
