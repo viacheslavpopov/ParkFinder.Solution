@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ParkFinder.Models;
+using ParkAPI.Models;
 
 namespace ParkFinder.Solution.Migrations
 {

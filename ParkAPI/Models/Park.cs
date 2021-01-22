@@ -1,4 +1,4 @@
-namespace ParkFinder.Models
+namespace ParkAPI.Models
 {
     public class Park // many potential parks to one loc
     {

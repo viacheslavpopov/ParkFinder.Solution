@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ParkFinder.Solution.Migrations
+namespace ParkAPI.Solution.Migrations
 {
     public partial class Initial : Migration
     {

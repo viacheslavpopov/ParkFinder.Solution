@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ParkFinder.Models;
+using ParkAPI.Models;
 
-namespace ParkFinder.Solution.Migrations
+namespace ParkAPI.Solution.Migrations
 {
     [DbContext(typeof(ParkAPIContext))]
     [Migration("20210122185447_AddParkProperties")]

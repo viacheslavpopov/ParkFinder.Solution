@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ParkFinder.Solution.Migrations
+namespace ParkAPI.Solution.Migrations
 {
     public partial class AddParkProperties : Migration
     {

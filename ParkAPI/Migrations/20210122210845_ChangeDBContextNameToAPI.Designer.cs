@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ParkFinder.Models;
+using ParkAPI.Models;
 
 namespace ParkFinder.Solution.Migrations
 {
@@ -11,7 +11,7 @@ namespace ParkFinder.Solution.Migrations
     [Migration("20210122210845_ChangeDBContextNameToAPI")]
     partial class ChangeDBContextNameToAPI
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

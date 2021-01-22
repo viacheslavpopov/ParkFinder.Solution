@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace ParkFinder.Models
+namespace ParkAPI.Models
 {
     public class ParkAPIContext : DbContext
     {

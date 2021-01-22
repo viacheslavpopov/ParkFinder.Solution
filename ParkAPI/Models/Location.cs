@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace ParkFinder.Models
+namespace ParkAPI.Models
 {
     public class Location // one loc to many parks
     {
