@@ -72,7 +72,10 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 
 ## 💪  Stretch Goals
 
-- Incoming ...
+- If including an MVC, add a Calendar and Maps for each state/national park.
+- Add a dynamic weather API for local conditions and alerts per park.
+- Add a history section about the parks that would include geology, history of the founding of the park, any historic events that occurred, etc.
+- Add (lots of) photos for the parks and their various amenities.
 
 ## 🛠️ Technologies Used/Required
 
