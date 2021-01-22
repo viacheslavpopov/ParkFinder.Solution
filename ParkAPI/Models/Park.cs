@@ -6,7 +6,7 @@ namespace ParkFinder.Models
         public int ParkName { get; set; }
         public string ParkAddress { get; set; }
         public string Directions { get; set; }
-        public int Fees { get; set; }
+        public string Fees { get; set; }
         public string RequiredPasses { get; set; }
         public string BasicInfo { get; set; }
         public string Alerts { get; set; }
