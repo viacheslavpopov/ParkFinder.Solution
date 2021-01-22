@@ -78,6 +78,7 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 ## 💪  Stretch Goals
 
 - Currently, the models of Park and Location are set up as a one-to-many relationship, where there can be many parks to one location. If I'm thinking about scalability and parks not being interested in arbitrary state/country borders, in reality, there can be many locations within a park, too. With more time, I would stretch the models to be a many-to-many relationship to account for park locations that include multiple states/countries.
+- The index queries for `Park`s does not currently include all properties. In a grander project, the user view would include some kind of filter for searching by more of these park properties.
 - If including an MVC, add a Calendar and Maps for each state/national park.
 - Add a dynamic weather API for local conditions and alerts per park.
 - Add a history section about the parks that would include geology, history of the founding of the park, any historic events that occurred, etc.
@@ -221,7 +222,7 @@ Base URL: `http://localhost:5004`
 
 Launch the project from the TravelAPI project folder by typing `dotnet run` into the terminal. Input `http://localhost:5004/swagger` to view and interact with the Swashbuckle SwaggerUI.
 
-![Swagger UI Endpoints](SwaggerUI_Endpoint.png "TravelAPI Endpoints")
+![Swagger UI Endpoints](TODO.png "TravelAPI Endpoints")
 
 ##### API Setup References
 
