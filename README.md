@@ -31,24 +31,24 @@ Find me at...
 - [💪  Stretch Goals](#--stretch-goals)
 - [🛠️ Technologies Used/Required](#-technologies-usedrequired)
 - [🏁 Installation Requirements](#-installation-requirements)
-    - [🔧 Installing Git](#-installing-git)
+    - [🔧  Installing Git](#--installing-git)
         - [For Mac Users](#for-mac-users)
         - [For Windows Users](#for-windows-users)
-    - [🔧 Installing C#, .NET, dotnet script, & MySQL](#-installing-c-net-dotnet-script--mysql)
+    - [🔧  Installing C#, .NET& MySQL](#--installing-c-net-mysql)
         - [For Mac](#for-mac)
         - [For Windows (10+)](#for-windows-10)
-    - [🔧 For Mac & Windows Operating Systems](#-for-mac--windows-operating-systems)
-    - [🔧 Clone or Download the Project](#-clone-or-download-the-project)
+    - [🔧  For Mac & Windows Operating Systems](#--for-mac--windows-operating-systems)
+    - [🔧  Clone or Download the Project](#--clone-or-download-the-project)
       - [To Clone](#to-clone)
       - [To Download](#to-download)
       - [.NET Core Commands](#net-core-commands)
-    - [🔧 Setting up a Local Database](#-setting-up-a-local-database)
-    - [🔧 MySQL Password Protection & .gitignore](#-mysql-password-protection--gitignore)
-    - [🔧 Import Database in MySQL Workbench](#-import-database-in-mysql-workbench)
+    - [🔧  Setting up a Local Database](#--setting-up-a-local-database)
+    - [🔧  MySQL Password Protection & .gitignore](#--mysql-password-protection--gitignore)
     - [🔧 Import Database with Entity Framework Core](#-import-database-with-entity-framework-core)
     - [📋 API Documentation](#-api-documentation)
     - [📋 Accessing the SwaggerUI](#-accessing-the-swaggerui)
       - [🔖 Swagger & Swashbuckle Setup References](#-swagger--swashbuckle-setup-references)
+      - [🔖 API Authentication References](#-api-authentication-references)
 - [🔍 License](#-license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -189,9 +189,20 @@ When the project is opened on your local machine...
 
 ```
 {
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
   "ConnectionStrings": {
     "DefaultConnection": "Server=localhost;Port=3306;database=danielle_thompson_park_finder;uid=root;pwd=YOUR-PASSWORD-HERE;"
-    }
+  },
+  "Jwt": {
+    "Key": "SomeReallySecretKey",
+    "Issuer": "SomeIssuer",
+    "Audience": "SomeAudience"
+  }
 }
 ```
 
@@ -230,6 +241,10 @@ Launch the project from the ParkAPI project folder by typing `dotnet run` into t
 - [Swashbuckle and ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio)
 - [Swashbuckle Getting Started](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/master/README.md)
 - [Swashbuckle.AspNetCore REAMDE](https://github.com/domaindrivendev/Swashbuckle.AspNetCore#swashbuckleaspnetcoreswaggerui)
+
+##### 🔖 API Authentication References
+
+- [Implementation JWT Authentication in ASP.NET Core APIs](http://www.binaryintellect.net/articles/1fdc8b3f-06a1-4f36-8c0b-7852bf850f52.aspx/)
 
 ---
 
