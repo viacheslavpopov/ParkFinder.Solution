@@ -26,5 +26,38 @@ namespace ParkAPI.Controllers
             var tokenHandler = new JwtSecurityTokenHandler();
             var stringToken = tokenHandler.WriteToken(token);
         }
+
+        private bool ValidateUser(User loginDetails)
+        {
+            if (loginDetails.UserName == "User1" && loginDetails.Password=="pass$word")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public class User
+        {
+            public string UserName { get; set; }
+            public string Password { get; set; }
+        }
+
+        [HttpPost]
+        public IActionResult Login([FromBody]User loginDetails)
+        {
+            bool result = ValidateUser(loginDetails);
+            if (result)
+            {
+            var tokenString = GenerateJWT();
+            return Ok(new { token = tokenString });
+            }
+            else
+            {
+                return Unauthorized();
+            }
+        }
     }
 }
