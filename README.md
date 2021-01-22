@@ -50,7 +50,7 @@ ___
 
 Back-end C#/.NET project creating an API for state and national parks. The API can get and post state and national parks for users.
 
-## User Stories
+## 💥 User Stories
 
 | **User Stories**  	|   	|
 |---	|---	|
@@ -70,7 +70,7 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 
 ---
 
-## Stretch Goals
+## 💪  Stretch Goals
 
 - Incoming ...
 
@@ -92,9 +92,9 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 
 ---
 
-## 🔧 Installation Requirements
+## 🏁 Installation Requirements
 
-#### Installing Git
+#### 🔧 Installing Git
 
 ###### For Mac Users
 
@@ -109,7 +109,7 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 - Go to (Git Bash)[https://gitforwindows.org/], click on the "Download" button, and download the corresponding exe file from the Git for Windows site.
 - Follow the instructions in the set up menu.
 
-#### Installing C#, .NET, dotnet script, & MySQL
+#### 🔧 Installing C#, .NET, dotnet script, & MySQL
 
 - Install C# and .Net according to your operating system below.
 
@@ -125,11 +125,11 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 - Open the file and follow the steps provided by the installer for your OS.
 - Confirm the installation is successful by opening a new Windows PowerShell window and running the command dotnet --version. You should see something a response like this: `2.2.105`.
 
-#### For Mac & Windows Operating Systems
+#### 🔧 For Mac & Windows Operating Systems
 
 - Install dotnet script with the following terminal command `dotnet tool install -g dotnet-script`.
 
-#### Clone or Download the Project
+#### 🔧 Clone or Download the Project
 
 ##### To Clone
 1. Once you have Git installed on your computer, go to this (GitHub repository)[https://github.com/dani-t-codes/ParkFinder.Solution].
@@ -154,7 +154,7 @@ When the project is opened on your local machine...
 
 (Ensure you are in the project's root directory, ParkAPI, in your Terminal/CMD before running these commands.)
 
-#### Setting up a Local Database
+#### 🔧 Setting up a Local Database
 
 - Download [MySQL Server](https://dev.mysql.com/downloads/file/?id=484914).
 - (Note: If you need additional assistance setting up MySQL, visit their [site](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/) for further instructions.
@@ -164,7 +164,7 @@ When the project is opened on your local machine...
 - Entity creates three files in the Migrations directory.
 - Run the following command: `dotnet ef database update`.
 
-#### MySQL Password Protection & .gitignore
+#### 🔧 MySQL Password Protection & .gitignore
 
 1. Create a file in the root directory of the project called "appsettings.json". Add the following snippet of code to the appsettings.json file:
 
@@ -186,7 +186,7 @@ When the project is opened on your local machine...
 - .DS_Store
 - appsettings.json
 
-#### Import Database in MySQL Workbench
+#### 🔧 Import Database in MySQL Workbench
 
 1. Open MySQL Workbench and a Terminal/CMD. Run the command line `mysql -uroot-p[YOUR-PASSWORD]` with your password  in the proper place to open a server.
 2. From the top navigation bar, select 'Server' > 'Data Import'.
@@ -196,7 +196,7 @@ When the project is opened on your local machine...
 6. Select the schema objects you would like to import
 7. To finalize, click 'Start Import'.
 
-#### Import Database with Entity Framework Core
+#### 🔧 Import Database with Entity Framework Core
 
 1. From your Terminal/CMD, navigate to the root directory of the project: `cd Desktop/ParkFinder.Solution/TravelAPI`.
 2. Run the command `dotnet ef database update` to create the database on your local system.
