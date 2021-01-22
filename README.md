@@ -78,7 +78,7 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 
 ## 🐛 Known bugs
 
-- Incoming...
+- No known bugs at this time.
 
 [Please report any bugs found here.](https://github.com/dani-t-codes/ParkFinder.Solution/issues)
 
@@ -86,7 +86,7 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 
 ## 💪  Stretch Goals
 
-- Currently, the models of Park and Location are set up as a one-to-many relationship, where there can be many parks to one location. If I'm thinking about scalability and parks not being interested in arbitrary state/country borders, in reality, there can be many locations within a park, too. With more time, I would stretch the models to be a many-to-many relationship to account for park locations that include multiple states/countries.
+- Currently, the models of Park and Location are set up as a one-to-many relationship, where there can be many parks to one location. If I'm thinking about scalability and parks not being interested in arbitrary state/country borders, in reality, there can be many locations within a park, too. With more time, I would stretch the models to be a many-to-many relationship to account for park locations that include multiple cities/states/countries.
 - The index queries for `Park`s does not currently include all properties. In a grander project, the user view would include some kind of filter for searching by more of these park properties.
 - If including an MVC, add a Calendar and Maps for each state/national park.
 - Add a dynamic weather API for local conditions and alerts per park.
@@ -113,7 +113,7 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 
 ## 🏁 Installation Requirements
 
-#### 🔧 Installing Git
+#### 🔧  Installing Git
 
 ###### For Mac Users
 
@@ -128,7 +128,7 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 - Go to (Git Bash)[https://gitforwindows.org/], click on the "Download" button, and download the corresponding exe file from the Git for Windows site.
 - Follow the instructions in the set up menu.
 
-#### 🔧 Installing C#, .NET, dotnet script, & MySQL
+#### 🔧  Installing C#, .NET& MySQL
 
 - Install C# and .Net according to your operating system below.
 
@@ -144,11 +144,11 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 - Open the file and follow the steps provided by the installer for your OS.
 - Confirm the installation is successful by opening a new Windows PowerShell window and running the command dotnet --version. You should see something a response like this: `2.2.105`.
 
-#### 🔧 For Mac & Windows Operating Systems
+#### 🔧  For Mac & Windows Operating Systems
 
 - Install dotnet script with the following terminal command `dotnet tool install -g dotnet-script`.
 
-#### 🔧 Clone or Download the Project
+#### 🔧  Clone or Download the Project
 
 ##### To Clone
 1. Once you have Git installed on your computer, go to this (GitHub repository)[https://github.com/dani-t-codes/ParkFinder.Solution].
@@ -162,7 +162,7 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 1. Alternatively, click the Green 'Code' button from the GitHub repository listed above.
 2. Select the "Download Zip" from the dropdown options.
 3. Open/unzip the file that has been downloaded to your local system.
-4. Open VSCode, or another code editor of your choice, and navigate to the unzipped file folder from File>Open...>TravelAPI.Solution to view the project.
+4. Open VSCode, or another code editor of your choice, and navigate to the unzipped file folder from File>Open...>ParkFinder.Solution to view the project.
 
 ##### .NET Core Commands
 
@@ -173,7 +173,7 @@ When the project is opened on your local machine...
 
 (Ensure you are in the project's root directory, ParkAPI, in your Terminal/CMD before running these commands.)
 
-#### 🔧 Setting up a Local Database
+#### 🔧  Setting up a Local Database
 
 - Download [MySQL Server](https://dev.mysql.com/downloads/file/?id=484914).
 - (Note: If you need additional assistance setting up MySQL, visit their [site](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/) for further instructions.
@@ -183,14 +183,14 @@ When the project is opened on your local machine...
 - Entity creates three files in the Migrations directory.
 - Run the following command: `dotnet ef database update`.
 
-#### 🔧 MySQL Password Protection & .gitignore
+#### 🔧  MySQL Password Protection & .gitignore
 
 1. Create a file in the root directory of the project called "appsettings.json". Add the following snippet of code to the appsettings.json file:
 
 ```
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Port=3306;database=danielle_thompson_bakery;uid=root;pwd=YOUR-PASSWORD-HERE;"
+    "DefaultConnection": "Server=localhost;Port=3306;database=danielle_thompson_park_finder;uid=root;pwd=YOUR-PASSWORD-HERE;"
     }
 }
 ```
@@ -205,25 +205,15 @@ When the project is opened on your local machine...
 - .DS_Store
 - appsettings.json
 
-#### 🔧 Import Database in MySQL Workbench
-
-1. Open MySQL Workbench and a Terminal/CMD. Run the command line `mysql -uroot-p[YOUR-PASSWORD]` with your password  in the proper place to open a server.
-2. From the top navigation bar, select 'Server' > 'Data Import'.
-3. Select the option 'Import from Self-Contained File'.
-4. Click the '...' button to navigate to the project file folder TravelAPI and select danielle_thompson_travel.sql.
-5. Set 'Default Target Schema' or create new schema.
-6. Select the schema objects you would like to import
-7. To finalize, click 'Start Import'.
-
 #### 🔧 Import Database with Entity Framework Core
 
-1. From your Terminal/CMD, navigate to the root directory of the project: `cd Desktop/ParkFinder.Solution/TravelAPI`.
+1. From your Terminal/CMD, navigate to the root directory of the project: `cd Desktop/ParkFinder.Solution/ParkAPI`.
 2. Run the command `dotnet ef database update` to create the database on your local system.
 3. If any updates to the database are needed with code changes, run `dotnet ef migrations add <NewMigrationNameHere>`, then `dotnet ef database update` to complete the update.
 
 #### 📋 API Documentation
 
-Explore the API endpoints in Postman.
+Explore the API endpoints in Postman with the application running (`dotnet run`).
 _Base URL_: `http://localhost:5004`
 
 ![Example Call Execution with Swagger](Resources/GET_Execution_Screenshot.png "Screenshot of GET Location Call with Query by State in SwaggerUI")
@@ -232,7 +222,7 @@ _Base URL_: `http://localhost:5004`
 
 Launch the project from the ParkAPI project folder by typing `dotnet run` into the terminal. Input `http://localhost:5000/swagger` to view and interact with the API from this app with SwaggerUI. Input `http://localhost:5000/swagger/v1/swagger.json` to view the raw json data from Swagger. Alternatively, you can view the raw json data for the current seeded data in the Resources folder in the ParkAPI root directory.
 
-![Swagger UI Endpoints](Resources/SwaggerUI_RoutePath_Screenshot.png "TravelAPI Endpoints")
+![Swagger UI Endpoints](Resources/SwaggerUI_RoutePath_Screenshot.png "ParkAPI Endpoints")
 
 ##### 🔖 Swagger & Swashbuckle Setup References
 
