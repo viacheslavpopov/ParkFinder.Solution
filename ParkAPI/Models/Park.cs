@@ -15,6 +15,7 @@ namespace ParkFinder.Models
         public bool HasVisitorCenter { get; set; } = false;
         public bool IsCurrentlyOpen { get; set; } = true; //helpful for covid closures, stretch goal built in park hours, weather advisories, road closures, etc.
         public bool InternetAccess { get; set; } = false; //stretch to string with internet & cell access info
-
+        public int LocationId { get; set; }
+        public Location Location { get; set; }
     }
 }
