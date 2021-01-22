@@ -16,32 +16,34 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-  - [📖 Description](#-description)
-  - [User Stories](#user-stories)
-  - [🐛 Known bugs](#-known-bugs)
-  - [Stretch Goals](#stretch-goals)
-  - [🛠️ Technologies Used/Required](#-technologies-usedrequired)
-  - [🔧 Installation Requirements](#-installation-requirements)
-      - [Installing Git](#installing-git)
-          - [For Mac Users](#for-mac-users)
-          - [For Windows Users](#for-windows-users)
-      - [Installing C#, .NET, dotnet script, & MySQL](#installing-c-net-dotnet-script--mysql)
-          - [For Mac](#for-mac)
-          - [For Windows (10+)](#for-windows-10)
-      - [For Mac & Windows Operating Systems](#for-mac--windows-operating-systems)
-      - [Clone or Download the Project](#clone-or-download-the-project)
-        - [To Clone](#to-clone)
-        - [To Download](#to-download)
-        - [.NET Core Commands](#net-core-commands)
-      - [Setting up a Local Database](#setting-up-a-local-database)
-      - [MySQL Password Protection & .gitignore](#mysql-password-protection--gitignore)
-      - [Import Database in MySQL Workbench](#import-database-in-mysql-workbench)
-      - [Import Database with Entity Framework Core](#import-database-with-entity-framework-core)
-      - [API Documentation](#api-documentation)
-      - [Accessing the SwaggerUI](#accessing-the-swaggerui)
-        - [API Setup References](#api-setup-references)
-  - [📫 Contact](#-contact)
-  - [License](#license)
+- [📖 Description](#-description)
+- [💥 User Stories](#-user-stories)
+- [🚀 SQL Schema Design](#-sql-schema-design)
+- [🐛 Known bugs](#-known-bugs)
+- [💪  Stretch Goals](#--stretch-goals)
+- [🛠️ Technologies Used/Required](#-technologies-usedrequired)
+- [🏁 Installation Requirements](#-installation-requirements)
+    - [🔧 Installing Git](#-installing-git)
+        - [For Mac Users](#for-mac-users)
+        - [For Windows Users](#for-windows-users)
+    - [🔧 Installing C#, .NET, dotnet script, & MySQL](#-installing-c-net-dotnet-script--mysql)
+        - [For Mac](#for-mac)
+        - [For Windows (10+)](#for-windows-10)
+    - [🔧 For Mac & Windows Operating Systems](#-for-mac--windows-operating-systems)
+    - [🔧 Clone or Download the Project](#-clone-or-download-the-project)
+      - [To Clone](#to-clone)
+      - [To Download](#to-download)
+      - [.NET Core Commands](#net-core-commands)
+    - [🔧 Setting up a Local Database](#-setting-up-a-local-database)
+    - [🔧 MySQL Password Protection & .gitignore](#-mysql-password-protection--gitignore)
+    - [🔧 Import Database in MySQL Workbench](#-import-database-in-mysql-workbench)
+    - [🔧 Import Database with Entity Framework Core](#-import-database-with-entity-framework-core)
+    - [📋 API Documentation](#-api-documentation)
+    - [📋 Accessing the SwaggerUI](#-accessing-the-swaggerui)
+      - [🔖 Swagger & Swashbuckle Setup References](#-swagger--swashbuckle-setup-references)
+- [📫 Contact](#-contact)
+- [🔍 License](#-license)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ___
@@ -63,9 +65,9 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 |  *7*  | As a user, I want to know what kind of amenities and features the parks have, like hiking trails, visitor centers, hours of visitor center operations, etc.  |
 |  *8*  | As a user, I want to get alerts about the national park I'm researching in case there are closure of roads due to weather, natural disasters, covid restrictions, etc.  |
 
-## SQL Schema Design
+## 🚀 SQL Schema Design
 
-![SQL Design Plan](SQL_Schema.png "One-to-many Relationship Schema for Reviews & Destinations")
+![SQL Design Plan](Resources/SQL_Schema.png "One-to-many Relationship Schema for Reviews & Destinations")
 
 ## 🐛 Known bugs
 
@@ -88,8 +90,8 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 
 - [Postman v.7.22.1](https://www.postman.com/downloads/)
 - [Swashbuckle, v. 5.6.2](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/master/README.md), for OpenAPI implementations for .NET with Swagger.
-- [SwaggerUI, v. 5.6.3](https://www.nuget.org/packages/Swashbuckle.AspNetCore.SwaggerUI/)
-- [Swagger, For API Documentation, v. 3.0.1](https://swagger.io/)
+- [SwaggerUI, v. 5.6.3](https://www.nuget.org/packages/Swashbuckle.AspNetCore.SwaggerUI/), for interactive API documentation & execution.
+- [Swagger, v. 3.0.1](https://swagger.io/), for API Documentation
 - C# v 7.3
 - .NET Core CLI v 2.2
 - Identity, ASP.NET MVC Core
@@ -212,24 +214,25 @@ When the project is opened on your local machine...
 2. Run the command `dotnet ef database update` to create the database on your local system.
 3. If any updates to the database are needed with code changes, run `dotnet ef migrations add <NewMigrationNameHere>`, then `dotnet ef database update` to complete the update.
 
-#### API Documentation
+#### 📋 API Documentation
 
-Feel free to explore the API endpoints in Postman.
-Base URL: `http://localhost:5004`
+Explore the API endpoints in Postman.
+_Base URL_: `http://localhost:5004`
 
+![Example Call Execution with Swagger](Resources/GET_Execution_Screenshot.png "Screenshot of GET Location Call with Query by State in SwaggerUI")
 
-#### Accessing the SwaggerUI
+#### 📋 Accessing the SwaggerUI
 
-Launch the project from the TravelAPI project folder by typing `dotnet run` into the terminal. Input `http://localhost:5000/swagger` to view and interact with the Swashbuckle SwaggerUI. Input `http://localhost:5000/swagger/v1/swagger.json` to view the raw json data from Swagger.
+Launch the project from the ParkAPI project folder by typing `dotnet run` into the terminal. Input `http://localhost:5000/swagger` to view and interact with the API from this app with SwaggerUI. Input `http://localhost:5000/swagger/v1/swagger.json` to view the raw json data from Swagger. Alternatively, you can view the raw json data for the current seeded data in the Resources folder in the ParkAPI root directory.
 
-![Swagger UI Endpoints](TODO.png "TravelAPI Endpoints")
+![Swagger UI Endpoints](Resources/SwaggerUI_RoutePath_Screenshot.png "TravelAPI Endpoints")
 
-##### API Setup References
+##### 🔖 Swagger & Swashbuckle Setup References
 
-[ASP.NET Core web API documentation with Swagger / OpenAPI](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0)
-[Swashbuckle and ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio)
-[Swashbuckle Getting Started](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/master/README.md)
-[Swashbuckle.AspNetCore REAMDE](https://github.com/domaindrivendev/Swashbuckle.AspNetCore#swashbuckleaspnetcoreswaggerui)
+- [ASP.NET Core web API documentation with Swagger / OpenAPI](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0)
+- [Swashbuckle and ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio)
+- [Swashbuckle Getting Started](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/master/README.md)
+- [Swashbuckle.AspNetCore REAMDE](https://github.com/domaindrivendev/Swashbuckle.AspNetCore#swashbuckleaspnetcoreswaggerui)
 
 ---
 
@@ -242,6 +245,6 @@ Find me at...
 - [LinkedIn](https://www.linkedin.com/in/danielle-thompson74/)
 
 
-## License
+## 🔍 License
 
 _MIT_ Copyright (c) 2021 _*Danielle Thompson*_
