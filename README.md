@@ -1,3 +1,4 @@
+
 <div class="center">
 
   # ParkFinder
@@ -10,6 +11,38 @@
 </div>
 
 ---
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [📖 Description](#-description)
+  - [User Stories](#user-stories)
+  - [🐛 Known bugs](#-known-bugs)
+  - [Stretch Goals](#stretch-goals)
+  - [🛠️ Technologies Used/Required](#-technologies-usedrequired)
+  - [🔧 Installation Requirements](#-installation-requirements)
+      - [Installing Git](#installing-git)
+          - [For Mac Users](#for-mac-users)
+          - [For Windows Users](#for-windows-users)
+      - [Installing C#, .NET, dotnet script, & MySQL](#installing-c-net-dotnet-script--mysql)
+          - [For Mac](#for-mac)
+          - [For Windows (10+)](#for-windows-10)
+      - [For Mac & Windows Operating Systems](#for-mac--windows-operating-systems)
+      - [Clone or Download the Project](#clone-or-download-the-project)
+        - [To Clone](#to-clone)
+        - [To Download](#to-download)
+        - [.NET Core Commands](#net-core-commands)
+      - [Setting up a Local Database](#setting-up-a-local-database)
+      - [MySQL Password Protection & .gitignore](#mysql-password-protection--gitignore)
+      - [Import Database in MySQL Workbench](#import-database-in-mysql-workbench)
+      - [Import Database with Entity Framework Core](#import-database-with-entity-framework-core)
+      - [API Documentation](#api-documentation)
+      - [Accessing the SwaggerUI](#accessing-the-swaggerui)
+        - [API Setup References](#api-setup-references)
+  - [📫 Contact](#-contact)
+  - [License](#license)
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ___
 
