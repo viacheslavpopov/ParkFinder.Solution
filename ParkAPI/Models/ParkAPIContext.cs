@@ -2,9 +2,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ParkFinder.Models
 {
-    public class ParkFinderContext :DbContext
+    public class ParkAPIContext : DbContext
     {
-        public ParkFinderContext(DbContextOptions<ParkFinderContext> options)
+        public ParkAPIContext(DbContextOptions<ParkAPIContext> options)
             :base(options)
             {
             }

@@ -10,8 +10,8 @@ namespace ParkFinder.Controllers
     [ApiController]
     public class LocationsController : ControllerBase
     {
-        private ParkFinderContext _db;
-        public LocationsController(ParkFinderContext db)
+        private ParkAPIContext _db;
+        public LocationsController(ParkAPIContext db)
         {
             _db = db;
         }

@@ -7,7 +7,7 @@ using ParkFinder.Models;
 
 namespace ParkFinder.Solution.Migrations
 {
-    [DbContext(typeof(ParkFinderContext))]
+    [DbContext(typeof(ParkAPIContext))]
     [Migration("20210122184337_Initial")]
     partial class Initial
     {
