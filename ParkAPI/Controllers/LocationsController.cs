@@ -54,6 +54,7 @@ namespace ParkAPI.Controllers
         }
 
         // GET api/locations/5
+        [HttpGet("{id}")]
         public ActionResult <Location> Get(int id)
         {
             return _db.Locations.FirstOrDefault(entry => entry.LocationId == id);

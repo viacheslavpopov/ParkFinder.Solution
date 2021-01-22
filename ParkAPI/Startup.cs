@@ -24,10 +24,10 @@ namespace ParkAPI
             services.AddDbContext<ParkAPIContext>(opt =>
                 opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            // services.AddSwaggerGen(c => {
-            //     c.SwaggerDoc("v1", new OpenApiInfo { Title = "ParkAPI", Version = "v1" });
-            // });
-            // services.AddSwaggerGenNewtonSoftSupport();
+            services.AddSwaggerGen(c => {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ParkAPI", Version = "v1" });
+            });
+            services.AddSwaggerGenNewtonsoftSupport(); // future-proofing package for Newtonsoft used in stretch MVC for project
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

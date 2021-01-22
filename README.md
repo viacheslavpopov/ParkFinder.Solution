@@ -220,7 +220,7 @@ Base URL: `http://localhost:5004`
 
 #### Accessing the SwaggerUI
 
-Launch the project from the TravelAPI project folder by typing `dotnet run` into the terminal. Input `http://localhost:5004/swagger` to view and interact with the Swashbuckle SwaggerUI.
+Launch the project from the TravelAPI project folder by typing `dotnet run` into the terminal. Input `http://localhost:5000/swagger` to view and interact with the Swashbuckle SwaggerUI. Input `http://localhost:5000/swagger/v1/swagger.json` to view the raw json data from Swagger.
 
 ![Swagger UI Endpoints](TODO.png "TravelAPI Endpoints")
 
