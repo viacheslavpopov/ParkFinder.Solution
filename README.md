@@ -57,8 +57,11 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 |  *1* 	|  As a user, I want to GET and POST information about state and national parks. 	|
 |  *2* 	|  As a user, I want to GET and POST park information by their state or federal designation. 	|
 |  *3* 	|  As a user, I want to GET park information by name. 	|
-|  *4* 	|  As a user, I want to PUT and DELETE park info, but only if I wrote them. (Start by requiring a user_name param to match the user_name of the author on the message. You can always try authentication later.) 	|
+|  *4* 	|  As an admin, I want to PUT and DELETE park info, but only if I wrote them. (Start by requiring a user_name param to match the user_name of the author on the message. You can always try authentication later.) 	|
 |  *5* 	|  As a user, I want to look up random parks for fun. 	|
+|  *6*  | As a user, I want to know if the park has cell or internet service to be able to plan accordingly for my travels.  |
+|  *7*  | As a user, I want to know what kind of amenities and features the parks have, like hiking trails, visitor centers, hours of visitor center operations, etc.  |
+|  *8*  | As a user, I want to get alerts about the national park I'm researching in case there are closure of roads due to weather, natural disasters, covid restrictions, etc.  |
 
 ![SQL Design Plan](TODO.png "One-to-many Relationship Schema for Reviews & Destinations")
 
@@ -72,6 +75,7 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 
 ## 💪  Stretch Goals
 
+- Currently, the models of Park and Location are set up as a one-to-many relationship, where there can be many parks to one location. If I'm thinking about scalability and parks not being interested in arbitrary state/country borders, in reality, there can be many locations within a park, too. With more time, I would stretch the models to be a many-to-many relationship to account for park locations that include multiple states/countries.
 - If including an MVC, add a Calendar and Maps for each state/national park.
 - Add a dynamic weather API for local conditions and alerts per park.
 - Add a history section about the parks that would include geology, history of the founding of the park, any historic events that occurred, etc.
