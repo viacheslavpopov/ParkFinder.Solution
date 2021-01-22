@@ -3,14 +3,22 @@
 
   # ParkFinder
 
-  #### Independent Project for Epicodus in C# Building an API with full CRUD
+  #### Independent Project for Epicodus in C# Building an API with full CRUD, Swagger, and SwaggerUI
 
   #### Project Began on 1.22.2021.
 
   #### By Danielle Thompson
+
 </div>
 
 ---
+## 📫 Contact
+
+Find me at...
+
+- [Github](https://github.com/dani-t-codes/)
+- Email: danithompson74 [at] gmail.com
+- [LinkedIn](https://www.linkedin.com/in/danielle-thompson74/)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -41,7 +49,6 @@
     - [📋 API Documentation](#-api-documentation)
     - [📋 Accessing the SwaggerUI](#-accessing-the-swaggerui)
       - [🔖 Swagger & Swashbuckle Setup References](#-swagger--swashbuckle-setup-references)
-- [📫 Contact](#-contact)
 - [🔍 License](#-license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -235,15 +242,6 @@ Launch the project from the ParkAPI project folder by typing `dotnet run` into t
 - [Swashbuckle.AspNetCore REAMDE](https://github.com/domaindrivendev/Swashbuckle.AspNetCore#swashbuckleaspnetcoreswaggerui)
 
 ---
-
-## 📫 Contact
-
-Find me at...
-
-- [Github](https://github.com/dani-t-codes/)
-- Email: danithompson74 [at] gmail.com
-- [LinkedIn](https://www.linkedin.com/in/danielle-thompson74/)
-
 
 ## 🔍 License
 
