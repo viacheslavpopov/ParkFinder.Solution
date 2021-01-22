@@ -53,8 +53,14 @@ namespace ParkFinder.Controllers
             _db.SaveChanges();
         }
 
-        //GET api/locations/5
-        [HttpGet("{id}")]
+        // GET api/locations/5
+        public ActionResult <Location> Get(int id)
+        {
+            return _db.Locations.FirstOrDefault(entry => entry.LocationId == id);
+        }
+
+        //PUT api/locations/5
+        [HttpPut("{id}")]
         public void Put(int id, [FromBody] Location location)
         {
             location.LocationId = id;

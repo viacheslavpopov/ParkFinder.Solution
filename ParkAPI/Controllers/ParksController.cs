@@ -73,6 +73,7 @@ namespace ParkFinder.Controllers{
             _db.SaveChanges();
         }
 
+        //DELETE api/parks/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
