@@ -3,7 +3,7 @@ namespace ParkFinder.Models
     public class Park // many potential parks to one loc
     {
         public int ParkId { get; set; }
-        public int ParkName { get; set; }
+        public string ParkName { get; set; }
         public string ParkAddress { get; set; }
         public string Directions { get; set; }
         public string Fees { get; set; }
