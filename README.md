@@ -246,6 +246,7 @@ Launch the project from the ParkAPI project folder by typing `dotnet run` into t
 ##### 🔖 API Authentication References
 
 - [Implementation JWT Authentication in ASP.NET Core APIs](http://www.binaryintellect.net/articles/1fdc8b3f-06a1-4f36-8c0b-7852bf850f52.aspx/)
+-[ASP.NET Core 2.2 - JWT Authentication Tutorial with Example API](https://jasonwatmore.com/post/2018/08/14/aspnet-core-21-jwt-authentication-tutorial-with-example-api)
 
 ---
 
