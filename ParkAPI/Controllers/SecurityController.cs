@@ -1,12 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.AspNetCore.Mvc;
 using ParkAPI.Models;
-using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using System;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Mvc;
+using System.IdentityModel.Tokens.Jwt;
+using System;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 
