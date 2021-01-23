@@ -99,6 +99,7 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 - [Swashbuckle, v. 5.6.2](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/master/README.md), for OpenAPI implementations for .NET with Swagger.
 - [SwaggerUI, v. 5.6.3](https://www.nuget.org/packages/Swashbuckle.AspNetCore.SwaggerUI/), for interactive API documentation & execution.
 - [Swagger, v. 3.0.1](https://swagger.io/), for API Documentation
+- [JwtBearer, v. 3.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer/3.0.0), for API Tokenization
 - C# v 7.3
 - .NET Core CLI v 2.2
 - Identity, ASP.NET MVC Core
