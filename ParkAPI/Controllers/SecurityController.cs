@@ -8,13 +8,15 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Text;
-using Microsoft.IdentityModel.Tokens;
 
 namespace ParkAPI.Controllers
 {
 
+    [Route("api/[controller]")]
+    [ApiController]
     public class SecurityController : ControllerBase
     {
 
