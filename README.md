@@ -226,7 +226,7 @@ When the project is opened on your local machine...
 #### 📋 API Documentation
 
 Explore the API endpoints in Postman with the application running (`dotnet run`).
-_Base URL_: `http://localhost:5004`
+_Base URL_: `http://localhost:5000`
 
 ![Example Call Execution with Swagger](Resources/GET_Execution_Screenshot.png "Screenshot of GET Location Call with Query by State in SwaggerUI")
 
