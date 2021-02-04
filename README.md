@@ -252,4 +252,5 @@ Launch the project from the ParkAPI project folder by typing `dotnet run` into t
 
 ## 🔍 License
 
-_MIT_ Copyright (c) 2021 _*Danielle Thompson*_
+*This software is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).*
+Copyright (c) 2021 _*Danielle Thompson*_
