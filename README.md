@@ -64,12 +64,6 @@ Back-end C#/.NET project creating an API for state and national parks. The API c
 
 ![SQL Design Plan](Resources/SQL_Schema.png "One-to-many Relationship Schema for Reviews & Destinations")
 
-## 🐛 Known bugs
-
-- No known bugs at this time.
-
-[Please report any bugs found here.](https://github.com/dani-t-codes/ParkFinder.Solution/issues)
-
 ---
 
 ## 💪  Stretch Goals
@@ -237,8 +231,3 @@ Launch the project from the ParkAPI project folder by typing `dotnet run` into t
 -[ASP.NET Core 2.2 - JWT Authentication Tutorial with Example API](https://jasonwatmore.com/post/2018/08/14/aspnet-core-21-jwt-authentication-tutorial-with-example-api)
 
 ---
-
-## 🔍 License
-
-*This software is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).*
-Copyright (c) 2021 _*Danielle Thompson*_
